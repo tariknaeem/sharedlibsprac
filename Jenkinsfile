@@ -1,12 +1,11 @@
 @Library("shared-library")_
 
 pipeline {
-  agent none
+  agent any
   stages{
     stage("UAT"){
       steps{
-        script{
-        mapExample(name:"Tarik", dayOfweek:"Monday")
+        sayHello()
         }
         }
        }
