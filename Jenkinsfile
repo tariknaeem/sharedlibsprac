@@ -5,7 +5,7 @@ pipeline {
   stages{
     stage("start"){
       steps{
-        sayHello "Tarik"
+        sayHello()
       }
     }
     stage("UAT"){
