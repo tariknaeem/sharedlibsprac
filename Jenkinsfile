@@ -7,7 +7,14 @@ pipeline {
       steps{
         sayHello "Tar"
         }
+    }
+      stage("Map"){
+        steps{
+          mapExample(name:"test",dayOfweek:"Monday") 
         }
+      
+    
+    }
        }
       }
      
