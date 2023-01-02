@@ -3,13 +3,6 @@
 pipeline {
   agent none
   stages{
-    stage("start"){
-      steps{
-        script{
-          sayHello
-        }
-        }
-    }
     stage("UAT"){
       steps{
         Script{
