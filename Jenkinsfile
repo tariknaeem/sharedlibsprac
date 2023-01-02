@@ -5,12 +5,16 @@ pipeline {
   stages{
     stage("start"){
       steps{
-        sayHello
-      }
+        script{
+          sayHello
+        }
+        }
     }
     stage("UAT"){
       steps{
+        Script{
         mapExample(name:"Tarik", dayOfweek:"Monday")
+        }
         }
        }
       }
