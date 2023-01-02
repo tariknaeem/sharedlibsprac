@@ -5,7 +5,7 @@ pipeline {
   stages{
     stage("UAT"){
       steps{
-        Script{
+        script{
         mapExample(name:"Tarik", dayOfweek:"Monday")
         }
         }
