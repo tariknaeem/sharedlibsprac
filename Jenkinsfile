@@ -5,7 +5,7 @@ pipeline {
   stages{
     stage("UAT"){
       steps{
-        sayHello()
+        sayHello "Tar"
         }
         }
        }
