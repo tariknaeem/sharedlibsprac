@@ -9,7 +9,7 @@ pipeline {
       steps{
         sayHello "Tar"
         echo myname
-        nyname = "Naeem"
+        myname = "Naeem"
       
       }
     }
