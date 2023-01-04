@@ -16,7 +16,7 @@ pipeline {
     }
       stage("Map"){
         steps{
-          scipt{
+          script{
             
             mapExample(name:"test",dayOfweek:"Monday") 
             echo myname
