@@ -10,7 +10,7 @@ pipeline {
         script{
           sayHello "Tar"
         echo myname
-        myname = "Naeem";
+        myname = "Naeem"
         }
       }
     }
