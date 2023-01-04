@@ -16,10 +16,12 @@ pipeline {
     }
       stage("Map"){
         steps{
-          mapExample(name:"test",dayOfweek:"Monday") 
-          echo myname
+          scipt{
+            
+            mapExample(name:"test",dayOfweek:"Monday") 
+            echo myname
         }
-      
+        }
     
     }
        }
