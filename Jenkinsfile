@@ -7,10 +7,11 @@ pipeline {
   stages{
     stage("UAT"){
       steps{
-        sayHello "Tar"
+        script{
+          sayHello "Tar"
         echo myname
-     #   myname = "Naeem";
-      
+        myname = "Naeem";
+        }
       }
     }
       stage("Map"){
