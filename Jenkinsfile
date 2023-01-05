@@ -21,6 +21,7 @@ pipeline {
       steps{
         sh 'echo "service user is $SERVICE_CREDS_USR"'
         sh 'echo "service user is $SERVICE_CREDS_PSW"'
+        sh 'echo "SSH private key is located at $SSH_CREDS"'
       }
     }
       
