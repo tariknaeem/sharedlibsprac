@@ -14,6 +14,16 @@ pipeline {
         }
       }
     }
+    stage("Example usrname and password"){
+      environment{
+        SERVICE_CREDS = credentials('my-username-pass')
+      }
+      steps{
+        sh 'echo "service user is $SERVICE_CREDS_USR"'
+      }
+    }
+      
+      
       stage("Map"){
         steps{
           script{
